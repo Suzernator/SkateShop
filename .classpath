@@ -8,5 +8,16 @@
 	<classpathentry kind="src" path="SkateShop/src/main/java"/>
 	<classpathentry kind="src" path="SkateShop/src/test/java"/>
 	<classpathentry exported="true" kind="lib" path="SkateShop/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SSene/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar" sourcepath="C:/Users/SSene/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/SSene/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22-javadoc.jar!/"/>
+			<attribute name="maven.groupId" value="org.projectlombok"/>
+			<attribute name="maven.artifactId" value="lombok"/>
+			<attribute name="maven.version" value="1.18.22"/>
+			<attribute name="maven.scope" value="compile"/>
+			<attribute name="maven.optionaldependency" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

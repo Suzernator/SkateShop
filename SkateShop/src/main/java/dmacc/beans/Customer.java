@@ -1,5 +1,5 @@
 package dmacc.beans;
-
+//Manuel Corral Ledezma
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

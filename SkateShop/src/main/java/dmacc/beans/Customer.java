@@ -32,3 +32,5 @@ public class Customer {
 	}
 }
 
+//Next spring plan, I Cyrus Brucker will be adding Database connections for the Customer class, Order class and Inventory class
+

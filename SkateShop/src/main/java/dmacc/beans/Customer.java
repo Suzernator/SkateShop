@@ -1,6 +1,6 @@
 package dmacc.beans;
-
-import lombok.Data; 
+//Manuel Corral Ledezma
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data

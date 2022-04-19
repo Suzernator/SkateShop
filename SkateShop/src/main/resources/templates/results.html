@@ -2,12 +2,19 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Search Results</title>
+<title>Customer Results</title>
 </head>
 <body>
-	<a href="viewCustomers">View All Customers</a><br />
-	<a href="viewOrders">View All Orders</a><br />
-	<a href="inputCustomer">Add A New Customer</a><br />
-	<a href="inputOrder">Add A New Order</a><br />
+	<form>
+		<table>
+			<tr th:each="currentCustomer : ${Customer} ">
+				<td th:text="${currentCustomer.customerId}"/>
+				<td th:text="${currentCustomer.firstName}" />
+				<td th:text="${currentCustomer.lastName}" />
+				<td th:text="${currentCustomer.organization}" />
+			</tr>
+		</table>
+	</form>
+	<a href="../inputCustomer"> Add a new Customer</a>
 </body>
 </html>

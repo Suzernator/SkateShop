@@ -15,7 +15,6 @@ public class Customer {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
-		//new code
 	}
 	
 	public Customer(long customerId, String organization) {
@@ -32,4 +31,4 @@ public class Customer {
 		this.organization = organization;
 	}
 }
-
+//test comment

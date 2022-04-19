@@ -1,5 +1,8 @@
 package dmacc.beans;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -8,12 +11,12 @@ import lombok.NoArgsConstructor;
 public class Order {
 	private long customerId;
 	private long orderId;
-	private String orderItem;
+	private ArrayList<Item> orderContents = new ArrayList<Item>();
 	
-	public Order(long customerId, long orderId, String orderItem) {
+	public Order(long customerId, long orderId, ArrayList<Item> orderItem) {
 		super();
 		this.customerId = customerId;
 		this.orderId = orderId;
-		this.orderItem = orderItem;
+		this.orderContents = orderItem;
 	}
 }

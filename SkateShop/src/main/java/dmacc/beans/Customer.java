@@ -1,10 +1,13 @@
 package dmacc.beans;
 
+import lombok.AllArgsConstructor;
 //Manuel Corral Ledezma
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Customer {
 	//TODO autogenerate id
 	private long id;
@@ -25,12 +28,5 @@ public class Customer {
 		this.organization = organization;
 	}
 	
-	public Customer(long id, String firstName, String lastName, String organization) {
-		super();
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.organization = organization;
-	}
 }
 

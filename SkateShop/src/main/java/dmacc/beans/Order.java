@@ -9,13 +9,14 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class Order {
-	private long customerId;
+	//TODO autogenerate id
+	private long id;
 	private long orderId;
 	private ArrayList<Item> orderContents = new ArrayList<Item>();
 	
 	public Order(long customerId, long orderId, ArrayList<Item> orderItem) {
 		super();
-		this.customerId = customerId;
+		this.id = customerId;
 		this.orderId = orderId;
 		this.orderContents = orderItem;
 	}

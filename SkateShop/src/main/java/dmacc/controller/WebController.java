@@ -16,15 +16,6 @@ import dmacc.repository.CustomerRepository;
 
 @Controller
 public class WebController {
-
-	@Autowired
-	CustomerRepository repo; 
-<<<<<<< HEAD
-
-	@GetMapping("addcustomer")
-	public String addCustomer(Model model) {
-		model.addAttribute("customers", repo()); 
-=======
 	
 	//Method that maps to the results page to view all the results
 	@GetMapping("/viewAll")
@@ -40,9 +31,10 @@ public class WebController {
 	//Metho that maps to input page to add a new customer to db
 	@GetMapping("/inputCustomer")
 	public String addNewCustomer(Model model) {
+		//lombok noargsconstrucotr not working for some reason
 		Customer c = new Customer();
 		model.addAttribute("newCustomer", c);
 		return "input"; 
->>>>>>> upstream/master
 	}
+	
 }

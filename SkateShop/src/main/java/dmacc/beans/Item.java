@@ -12,7 +12,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class Item {
-	private int itemID;
+	//TODO autogenerate id
+	private int id;
 	private double itemPrice;
 	private String itemName;
 	

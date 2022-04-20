@@ -1,15 +1,17 @@
 package dmacc.beans;
+
 //Manuel Corral Ledezma
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 public class Customer {
-	private long customerId;
+	//TODO autogenerate id
+	private long id;
 	private String firstName;
 	private String lastName;
 	private String organization;
+
 
 	public Customer(String firstName, String lastName) {
 		super();
@@ -17,15 +19,15 @@ public class Customer {
 		this.lastName = lastName;
 	}
 	
-	public Customer(long customerId, String organization) {
+	public Customer(long id, String organization) {
 		super();
-		this.customerId = customerId;
+		this.id = id;
 		this.organization = organization;
 	}
 	
-	public Customer(long customerId, String firstName, String lastName, String organization) {
+	public Customer(long id, String firstName, String lastName, String organization) {
 		super();
-		this.customerId = customerId;
+		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.organization = organization;
